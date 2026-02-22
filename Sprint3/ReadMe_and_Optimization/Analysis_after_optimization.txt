@@ -1,0 +1,442 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 50.00      0.01     0.01  2000000     0.00     0.00  double const& std::clamp<double>(double const&, double const&, double const&)
+ 50.00      0.02     0.01        1    10.00    10.00  printVectorData(std::vector<SimData, std::allocator<SimData> > const&)
+  0.00      0.02     0.00  2000002     0.00     0.00  __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::base() const
+  0.00      0.02     0.00  2000000     0.00     0.00  std::__is_constant_evaluated()
+  0.00      0.02     0.00  2000000     0.00     0.00  double const& std::max<double>(double const&, double const&)
+  0.00      0.02     0.00  2000000     0.00     0.00  double const& std::min<double>(double const&, double const&)
+  0.00      0.02     0.00  1000001     0.00     0.00  bool __gnu_cxx::operator!=<SimData const*, std::vector<SimData, std::allocator<SimData> > >(__gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&, __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&)
+  0.00      0.02     0.00  1000000     0.00     0.00  __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator++()
+  0.00      0.02     0.00  1000000     0.00     0.00  EulerSolver::step(double, double, double) const
+  0.00      0.02     0.00  1000000     0.00     0.00  CruiseControlSystem::limitAcceleration(double, double) const
+  0.00      0.02     0.00  1000000     0.00     0.00  __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator*() const
+  0.00      0.02     0.00  1000000     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long)
+  0.00      0.02     0.00   400962     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) const
+  0.00      0.02     0.00   400034     0.00     0.00  std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  0.00      0.02     0.00   400020     0.00     0.00  std::setw(int)
+  0.00      0.02     0.00   200970     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::size() const
+  0.00      0.02     0.00   200017     0.00     0.00  std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  0.00      0.02     0.00   200017     0.00     0.00  std::setprecision(int)
+  0.00      0.02     0.00   200017     0.00     0.00  std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  0.00      0.02     0.00   200017     0.00     0.00  std::operator~(std::_Ios_Fmtflags)
+  0.00      0.02     0.00   200017     0.00     0.00  std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  0.00      0.02     0.00   200017     0.00     0.00  std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  0.00      0.02     0.00        4     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() const
+  0.00      0.02     0.00        4     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::max_size() const
+  0.00      0.02     0.00        4     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::_S_max_size(std::allocator<SimData> const&)
+  0.00      0.02     0.00        4     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.02     0.00        3     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator()
+  0.00      0.02     0.00        3     0.00     0.00  SimData* std::__niter_base<SimData*>(SimData*)
+  0.00      0.02     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::__normal_iterator(SimData const* const&)
+  0.00      0.02     0.00        2     0.00     0.00  CruiseControlSystem::getMaxAccel() const
+  0.00      0.02     0.00        2     0.00     0.00  CruiseControlSystem::getMaxSpeed() const
+  0.00      0.02     0.00        2     0.00     0.00  CruiseControlSystem::getK(double) const
+  0.00      0.02     0.00        2     0.00     0.00  CruiseControlSystem::getTau(double) const
+  0.00      0.02     0.00        2     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_M_deallocate(SimData*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  exportCSV(std::vector<SimData, std::allocator<SimData> > const&)
+  0.00      0.02     0.00        1     0.00     0.00  plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double)
+  0.00      0.02     0.00        1     0.00    10.00  CruiseControlSystem::runSimulation(double, double)
+  0.00      0.02     0.00        1     0.00     0.00  CruiseControlSystem::calculateGains(double, double, double)
+  0.00      0.02     0.00        1     0.00     0.00  CruiseControlSystem::setModel(CarType, WeatherCondition, RoadType)
+  0.00      0.02     0.00        1     0.00     0.00  CruiseControlSystem::CruiseControlSystem()
+  0.00      0.02     0.00        1     0.00     0.00  CruiseControlSystem::getMaxDecel() const
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::end() const
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::begin() const
+  0.00      0.02     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<SimData*>(SimData*, SimData*)
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_M_allocate(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::_Vector_impl()
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::~_Vector_impl()
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_base()
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<SimData, std::allocator<SimData> >::~_Vector_base()
+  0.00      0.02     0.00        1     0.00     0.00  std::__new_allocator<SimData>::deallocate(SimData*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::__new_allocator<SimData>::allocate(unsigned long, void const*)
+  0.00      0.02     0.00        1     0.00     0.00  std::__new_allocator<SimData>::~__new_allocator()
+  0.00      0.02     0.00        1     0.00     0.00  SimData* std::__uninitialized_default_n_1<true>::__uninit_default_n<SimData*, unsigned long>(SimData*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::_S_relocate(SimData*, SimData*, SimData*, std::allocator<SimData>&)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::resize(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::vector()
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<SimData, std::allocator<SimData> >::~vector()
+  0.00      0.02     0.00        1     0.00     0.00  void std::_Construct<SimData>(SimData*)
+  0.00      0.02     0.00        1     0.00     0.00  SimData* std::__fill_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&, std::random_access_iterator_tag)
+  0.00      0.02     0.00        1     0.00     0.00  SimData* std::__addressof<SimData>(SimData&)
+  0.00      0.02     0.00        1     0.00     0.00  SimData* std::__relocate_a<SimData*, SimData*, std::allocator<SimData> >(SimData*, SimData*, SimData*, std::allocator<SimData>&)
+  0.00      0.02     0.00        1     0.00     0.00  std::enable_if<std::__is_bitwise_relocatable<SimData, void>::value, SimData*>::type std::__relocate_a_1<SimData, SimData>(SimData*, SimData*, SimData*, std::allocator<SimData>&)
+  0.00      0.02     0.00        1     0.00     0.00  std::__size_to_integer(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  SimData* std::__uninitialized_default_n<SimData*, unsigned long>(SimData*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  SimData* std::__uninitialized_default_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, std::allocator<SimData>&)
+  0.00      0.02     0.00        1     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.02     0.00        1     0.00     0.00  SimData* std::fill_n<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&)
+  0.00      0.02     0.00        1     0.00     0.00  void std::_Destroy<SimData*>(SimData*, SimData*)
+  0.00      0.02     0.00        1     0.00     0.00  void std::__fill_a<SimData*, SimData>(SimData*, SimData*, SimData const&)
+  0.00      0.02     0.00        1     0.00     0.00  __gnu_cxx::__enable_if<!std::__is_scalar<SimData>::__value, void>::__type std::__fill_a1<SimData*, SimData>(SimData*, SimData*, SimData const&)
+  0.00      0.02     0.00        1     0.00     0.00  operator new(unsigned long, void*)
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) for 50.00% of 0.02 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.02                 main [1]
+                0.00    0.01       1/1           CruiseControlSystem::runSimulation(double, double) [4]
+                0.01    0.00       1/1           printVectorData(std::vector<SimData, std::allocator<SimData> > const&) [3]
+                0.00    0.00       2/2           CruiseControlSystem::getMaxSpeed() const [39]
+                0.00    0.00       2/2           CruiseControlSystem::getMaxAccel() const [38]
+                0.00    0.00       1/1           CruiseControlSystem::CruiseControlSystem() [47]
+                0.00    0.00       1/1           CruiseControlSystem::setModel(CarType, WeatherCondition, RoadType) [46]
+                0.00    0.00       1/1           CruiseControlSystem::calculateGains(double, double, double) [45]
+                0.00    0.00       1/1           CruiseControlSystem::getMaxDecel() const [48]
+                0.00    0.00       1/1           plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double) [44]
+                0.00    0.00       1/1           exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [43]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::~vector() [67]
+-----------------------------------------------
+                0.01    0.00 1000000/2000000     CruiseControlSystem::runSimulation(double, double) [4]
+                0.01    0.00 1000000/2000000     CruiseControlSystem::limitAcceleration(double, double) const [5]
+[2]     50.0    0.01    0.00 2000000         double const& std::clamp<double>(double const&, double const&, double const&) [2]
+                0.00    0.00 2000000/2000000     std::__is_constant_evaluated() [13]
+                0.00    0.00 2000000/2000000     double const& std::max<double>(double const&, double const&) [14]
+                0.00    0.00 2000000/2000000     double const& std::min<double>(double const&, double const&) [15]
+-----------------------------------------------
+                0.01    0.00       1/1           main [1]
+[3]     50.0    0.01    0.00       1         printVectorData(std::vector<SimData, std::allocator<SimData> > const&) [3]
+                0.00    0.00  400004/400020      std::setw(int) [23]
+                0.00    0.00  400002/400962      std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) const [21]
+                0.00    0.00  200002/200970      std::vector<SimData, std::allocator<SimData> >::size() const [24]
+                0.00    0.00  200001/200017      std::setprecision(int) [26]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[4]     50.0    0.00    0.01       1         CruiseControlSystem::runSimulation(double, double) [4]
+                0.01    0.00 1000000/2000000     double const& std::clamp<double>(double const&, double const&, double const&) [2]
+                0.00    0.01 1000000/1000000     CruiseControlSystem::limitAcceleration(double, double) const [5]
+                0.00    0.00 1000000/1000000     EulerSolver::step(double, double, double) const [18]
+                0.00    0.00 1000000/1000000     std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) [20]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::vector() [66]
+                0.00    0.00       1/2           CruiseControlSystem::getTau(double) const [41]
+                0.00    0.00       1/2           CruiseControlSystem::getK(double) const [40]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::resize(unsigned long) [65]
+-----------------------------------------------
+                0.00    0.01 1000000/1000000     CruiseControlSystem::runSimulation(double, double) [4]
+[5]     25.0    0.00    0.01 1000000         CruiseControlSystem::limitAcceleration(double, double) const [5]
+                0.01    0.00 1000000/2000000     double const& std::clamp<double>(double const&, double const&, double const&) [2]
+-----------------------------------------------
+                0.00    0.00 2000002/2000002     bool __gnu_cxx::operator!=<SimData const*, std::vector<SimData, std::allocator<SimData> > >(__gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&, __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&) [16]
+[12]     0.0    0.00    0.00 2000002         __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::base() const [12]
+-----------------------------------------------
+                0.00    0.00 2000000/2000000     double const& std::clamp<double>(double const&, double const&, double const&) [2]
+[13]     0.0    0.00    0.00 2000000         std::__is_constant_evaluated() [13]
+-----------------------------------------------
+                0.00    0.00 2000000/2000000     double const& std::clamp<double>(double const&, double const&, double const&) [2]
+[14]     0.0    0.00    0.00 2000000         double const& std::max<double>(double const&, double const&) [14]
+-----------------------------------------------
+                0.00    0.00 2000000/2000000     double const& std::clamp<double>(double const&, double const&, double const&) [2]
+[15]     0.0    0.00    0.00 2000000         double const& std::min<double>(double const&, double const&) [15]
+-----------------------------------------------
+                0.00    0.00 1000001/1000001     exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [43]
+[16]     0.0    0.00    0.00 1000001         bool __gnu_cxx::operator!=<SimData const*, std::vector<SimData, std::allocator<SimData> > >(__gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&, __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&) [16]
+                0.00    0.00 2000002/2000002     __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::base() const [12]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [43]
+[17]     0.0    0.00    0.00 1000000         __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator++() [17]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     CruiseControlSystem::runSimulation(double, double) [4]
+[18]     0.0    0.00    0.00 1000000         EulerSolver::step(double, double, double) const [18]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [43]
+[19]     0.0    0.00    0.00 1000000         __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator*() const [19]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     CruiseControlSystem::runSimulation(double, double) [4]
+[20]     0.0    0.00    0.00 1000000         std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) [20]
+-----------------------------------------------
+                0.00    0.00     960/400962      plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double) [44]
+                0.00    0.00  400002/400962      printVectorData(std::vector<SimData, std::allocator<SimData> > const&) [3]
+[21]     0.0    0.00    0.00  400962         std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) const [21]
+-----------------------------------------------
+                0.00    0.00  200017/400034      std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [27]
+                0.00    0.00  200017/400034      std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [25]
+[22]     0.0    0.00    0.00  400034         std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [22]
+-----------------------------------------------
+                0.00    0.00      16/400020      plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double) [44]
+                0.00    0.00  400004/400020      printVectorData(std::vector<SimData, std::allocator<SimData> > const&) [3]
+[23]     0.0    0.00    0.00  400020         std::setw(int) [23]
+-----------------------------------------------
+                0.00    0.00       1/200970      std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+                0.00    0.00       2/200970      std::vector<SimData, std::allocator<SimData> >::resize(unsigned long) [65]
+                0.00    0.00       4/200970      std::vector<SimData, std::allocator<SimData> >::_M_check_len(unsigned long, char const*) const [49]
+                0.00    0.00     961/200970      plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double) [44]
+                0.00    0.00  200002/200970      printVectorData(std::vector<SimData, std::allocator<SimData> > const&) [3]
+[24]     0.0    0.00    0.00  200970         std::vector<SimData, std::allocator<SimData> >::size() const [24]
+-----------------------------------------------
+                0.00    0.00  200017/200017      std::fixed(std::ios_base&) [83]
+[25]     0.0    0.00    0.00  200017         std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [25]
+                0.00    0.00  200017/200017      std::operator~(std::_Ios_Fmtflags) [28]
+                0.00    0.00  200017/200017      std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [27]
+                0.00    0.00  200017/400034      std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [22]
+                0.00    0.00  200017/200017      std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [29]
+-----------------------------------------------
+                0.00    0.00      16/200017      plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double) [44]
+                0.00    0.00  200001/200017      printVectorData(std::vector<SimData, std::allocator<SimData> > const&) [3]
+[26]     0.0    0.00    0.00  200017         std::setprecision(int) [26]
+-----------------------------------------------
+                0.00    0.00  200017/200017      std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [25]
+[27]     0.0    0.00    0.00  200017         std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [27]
+                0.00    0.00  200017/400034      std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [22]
+-----------------------------------------------
+                0.00    0.00  200017/200017      std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [25]
+[28]     0.0    0.00    0.00  200017         std::operator~(std::_Ios_Fmtflags) [28]
+-----------------------------------------------
+                0.00    0.00  200017/200017      std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [25]
+[29]     0.0    0.00    0.00  200017         std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [29]
+                0.00    0.00  200017/200017      std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [30]
+-----------------------------------------------
+                0.00    0.00  200017/200017      std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [29]
+[30]     0.0    0.00    0.00  200017         std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [30]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<SimData, std::allocator<SimData> >::max_size() const [32]
+[31]     0.0    0.00    0.00       4         std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() const [31]
+-----------------------------------------------
+                0.00    0.00       2/4           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+                0.00    0.00       2/4           std::vector<SimData, std::allocator<SimData> >::_M_check_len(unsigned long, char const*) const [49]
+[32]     0.0    0.00    0.00       4         std::vector<SimData, std::allocator<SimData> >::max_size() const [32]
+                0.00    0.00       4/4           std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() const [31]
+                0.00    0.00       4/4           std::vector<SimData, std::allocator<SimData> >::_S_max_size(std::allocator<SimData> const&) [33]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<SimData, std::allocator<SimData> >::max_size() const [32]
+[33]     0.0    0.00    0.00       4         std::vector<SimData, std::allocator<SimData> >::_S_max_size(std::allocator<SimData> const&) [33]
+                0.00    0.00       4/4           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [34]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<SimData, std::allocator<SimData> >::_S_max_size(std::allocator<SimData> const&) [33]
+[34]     0.0    0.00    0.00       4         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [34]
+-----------------------------------------------
+                0.00    0.00       1/3           std::vector<SimData, std::allocator<SimData> >::~vector() [67]
+                0.00    0.00       2/3           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+[35]     0.0    0.00    0.00       3         std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() [35]
+-----------------------------------------------
+                0.00    0.00       3/3           SimData* std::__relocate_a<SimData*, SimData*, std::allocator<SimData> >(SimData*, SimData*, SimData*, std::allocator<SimData>&) [71]
+[36]     0.0    0.00    0.00       3         SimData* std::__niter_base<SimData*>(SimData*) [36]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<SimData, std::allocator<SimData> >::begin() const [51]
+                0.00    0.00       1/2           std::vector<SimData, std::allocator<SimData> >::end() const [50]
+[37]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::__normal_iterator(SimData const* const&) [37]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[38]     0.0    0.00    0.00       2         CruiseControlSystem::getMaxAccel() const [38]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[39]     0.0    0.00    0.00       2         CruiseControlSystem::getMaxSpeed() const [39]
+-----------------------------------------------
+                0.00    0.00       1/2           CruiseControlSystem::calculateGains(double, double, double) [45]
+                0.00    0.00       1/2           CruiseControlSystem::runSimulation(double, double) [4]
+[40]     0.0    0.00    0.00       2         CruiseControlSystem::getK(double) const [40]
+-----------------------------------------------
+                0.00    0.00       1/2           CruiseControlSystem::calculateGains(double, double, double) [45]
+                0.00    0.00       1/2           CruiseControlSystem::runSimulation(double, double) [4]
+[41]     0.0    0.00    0.00       2         CruiseControlSystem::getTau(double) const [41]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Vector_base<SimData, std::allocator<SimData> >::~_Vector_base() [58]
+                0.00    0.00       1/2           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+[42]     0.0    0.00    0.00       2         std::_Vector_base<SimData, std::allocator<SimData> >::_M_deallocate(SimData*, unsigned long) [42]
+                0.00    0.00       1/1           std::__new_allocator<SimData>::deallocate(SimData*, unsigned long) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[43]     0.0    0.00    0.00       1         exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [43]
+                0.00    0.00 1000001/1000001     bool __gnu_cxx::operator!=<SimData const*, std::vector<SimData, std::allocator<SimData> > >(__gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&, __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&) [16]
+                0.00    0.00 1000000/1000000     __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator*() const [19]
+                0.00    0.00 1000000/1000000     __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator++() [17]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::begin() const [51]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::end() const [50]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[44]     0.0    0.00    0.00       1         plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double) [44]
+                0.00    0.00     961/200970      std::vector<SimData, std::allocator<SimData> >::size() const [24]
+                0.00    0.00     960/400962      std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) const [21]
+                0.00    0.00      16/200017      std::setprecision(int) [26]
+                0.00    0.00      16/400020      std::setw(int) [23]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[45]     0.0    0.00    0.00       1         CruiseControlSystem::calculateGains(double, double, double) [45]
+                0.00    0.00       1/2           CruiseControlSystem::getTau(double) const [41]
+                0.00    0.00       1/2           CruiseControlSystem::getK(double) const [40]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[46]     0.0    0.00    0.00       1         CruiseControlSystem::setModel(CarType, WeatherCondition, RoadType) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[47]     0.0    0.00    0.00       1         CruiseControlSystem::CruiseControlSystem() [47]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[48]     0.0    0.00    0.00       1         CruiseControlSystem::getMaxDecel() const [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+[49]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::_M_check_len(unsigned long, char const*) const [49]
+                0.00    0.00       4/200970      std::vector<SimData, std::allocator<SimData> >::size() const [24]
+                0.00    0.00       2/4           std::vector<SimData, std::allocator<SimData> >::max_size() const [32]
+                0.00    0.00       1/1           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [76]
+-----------------------------------------------
+                0.00    0.00       1/1           exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [43]
+[50]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::end() const [50]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::__normal_iterator(SimData const* const&) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [43]
+[51]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::begin() const [51]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::__normal_iterator(SimData const* const&) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<SimData*>(SimData*, SimData*) [78]
+[52]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<SimData*>(SimData*, SimData*) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+[53]     0.0    0.00    0.00       1         std::_Vector_base<SimData, std::allocator<SimData> >::_M_allocate(unsigned long) [53]
+                0.00    0.00       1/1           std::__new_allocator<SimData>::allocate(unsigned long, void const*) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_base() [57]
+[54]     0.0    0.00    0.00       1         std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::_Vector_impl() [54]
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl_data::_Vector_impl_data() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::~_Vector_base() [58]
+[55]     0.0    0.00    0.00       1         std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::~_Vector_impl() [55]
+                0.00    0.00       1/1           std::__new_allocator<SimData>::~__new_allocator() [61]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::_Vector_impl() [54]
+[56]     0.0    0.00    0.00       1         std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl_data::_Vector_impl_data() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::vector() [66]
+[57]     0.0    0.00    0.00       1         std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_base() [57]
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::_Vector_impl() [54]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::~vector() [67]
+[58]     0.0    0.00    0.00       1         std::_Vector_base<SimData, std::allocator<SimData> >::~_Vector_base() [58]
+                0.00    0.00       1/2           std::_Vector_base<SimData, std::allocator<SimData> >::_M_deallocate(SimData*, unsigned long) [42]
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::~_Vector_impl() [55]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_M_deallocate(SimData*, unsigned long) [42]
+[59]     0.0    0.00    0.00       1         std::__new_allocator<SimData>::deallocate(SimData*, unsigned long) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_M_allocate(unsigned long) [53]
+[60]     0.0    0.00    0.00       1         std::__new_allocator<SimData>::allocate(unsigned long, void const*) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::~_Vector_impl() [55]
+[61]     0.0    0.00    0.00       1         std::__new_allocator<SimData>::~__new_allocator() [61]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n<SimData*, unsigned long>(SimData*, unsigned long) [74]
+[62]     0.0    0.00    0.00       1         SimData* std::__uninitialized_default_n_1<true>::__uninit_default_n<SimData*, unsigned long>(SimData*, unsigned long) [62]
+                0.00    0.00       1/1           SimData* std::__addressof<SimData>(SimData&) [70]
+                0.00    0.00       1/1           void std::_Construct<SimData>(SimData*) [68]
+                0.00    0.00       1/1           SimData* std::fill_n<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+[63]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::_S_relocate(SimData*, SimData*, SimData*, std::allocator<SimData>&) [63]
+                0.00    0.00       1/1           SimData* std::__relocate_a<SimData*, SimData*, std::allocator<SimData> >(SimData*, SimData*, SimData*, std::allocator<SimData>&) [71]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::resize(unsigned long) [65]
+[64]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+                0.00    0.00       2/4           std::vector<SimData, std::allocator<SimData> >::max_size() const [32]
+                0.00    0.00       2/3           std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() [35]
+                0.00    0.00       1/200970      std::vector<SimData, std::allocator<SimData> >::size() const [24]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_M_check_len(unsigned long, char const*) const [49]
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_M_allocate(unsigned long) [53]
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, std::allocator<SimData>&) [75]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_S_relocate(SimData*, SimData*, SimData*, std::allocator<SimData>&) [63]
+                0.00    0.00       1/2           std::_Vector_base<SimData, std::allocator<SimData> >::_M_deallocate(SimData*, unsigned long) [42]
+-----------------------------------------------
+                0.00    0.00       1/1           CruiseControlSystem::runSimulation(double, double) [4]
+[65]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::resize(unsigned long) [65]
+                0.00    0.00       2/200970      std::vector<SimData, std::allocator<SimData> >::size() const [24]
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           CruiseControlSystem::runSimulation(double, double) [4]
+[66]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::vector() [66]
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_base() [57]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[67]     0.0    0.00    0.00       1         std::vector<SimData, std::allocator<SimData> >::~vector() [67]
+                0.00    0.00       1/3           std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() [35]
+                0.00    0.00       1/1           void std::_Destroy<SimData*>(SimData*, SimData*) [78]
+                0.00    0.00       1/1           std::_Vector_base<SimData, std::allocator<SimData> >::~_Vector_base() [58]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n_1<true>::__uninit_default_n<SimData*, unsigned long>(SimData*, unsigned long) [62]
+[68]     0.0    0.00    0.00       1         void std::_Construct<SimData>(SimData*) [68]
+                0.00    0.00       1/1           operator new(unsigned long, void*) [81]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::fill_n<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&) [77]
+[69]     0.0    0.00    0.00       1         SimData* std::__fill_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&, std::random_access_iterator_tag) [69]
+                0.00    0.00       1/1           void std::__fill_a<SimData*, SimData>(SimData*, SimData*, SimData const&) [79]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n_1<true>::__uninit_default_n<SimData*, unsigned long>(SimData*, unsigned long) [62]
+[70]     0.0    0.00    0.00       1         SimData* std::__addressof<SimData>(SimData&) [70]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_S_relocate(SimData*, SimData*, SimData*, std::allocator<SimData>&) [63]
+[71]     0.0    0.00    0.00       1         SimData* std::__relocate_a<SimData*, SimData*, std::allocator<SimData> >(SimData*, SimData*, SimData*, std::allocator<SimData>&) [71]
+                0.00    0.00       3/3           SimData* std::__niter_base<SimData*>(SimData*) [36]
+                0.00    0.00       1/1           std::enable_if<std::__is_bitwise_relocatable<SimData, void>::value, SimData*>::type std::__relocate_a_1<SimData, SimData>(SimData*, SimData*, SimData*, std::allocator<SimData>&) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::__relocate_a<SimData*, SimData*, std::allocator<SimData> >(SimData*, SimData*, SimData*, std::allocator<SimData>&) [71]
+[72]     0.0    0.00    0.00       1         std::enable_if<std::__is_bitwise_relocatable<SimData, void>::value, SimData*>::type std::__relocate_a_1<SimData, SimData>(SimData*, SimData*, SimData*, std::allocator<SimData>&) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::fill_n<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&) [77]
+[73]     0.0    0.00    0.00       1         std::__size_to_integer(unsigned long) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, std::allocator<SimData>&) [75]
+[74]     0.0    0.00    0.00       1         SimData* std::__uninitialized_default_n<SimData*, unsigned long>(SimData*, unsigned long) [74]
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n_1<true>::__uninit_default_n<SimData*, unsigned long>(SimData*, unsigned long) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [64]
+[75]     0.0    0.00    0.00       1         SimData* std::__uninitialized_default_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, std::allocator<SimData>&) [75]
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n<SimData*, unsigned long>(SimData*, unsigned long) [74]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::_M_check_len(unsigned long, char const*) const [49]
+[76]     0.0    0.00    0.00       1         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [76]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::__uninitialized_default_n_1<true>::__uninit_default_n<SimData*, unsigned long>(SimData*, unsigned long) [62]
+[77]     0.0    0.00    0.00       1         SimData* std::fill_n<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&) [77]
+                0.00    0.00       1/1           std::__size_to_integer(unsigned long) [73]
+                0.00    0.00       1/1           SimData* std::__fill_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&, std::random_access_iterator_tag) [69]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SimData, std::allocator<SimData> >::~vector() [67]
+[78]     0.0    0.00    0.00       1         void std::_Destroy<SimData*>(SimData*, SimData*) [78]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<SimData*>(SimData*, SimData*) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           SimData* std::__fill_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&, std::random_access_iterator_tag) [69]
+[79]     0.0    0.00    0.00       1         void std::__fill_a<SimData*, SimData>(SimData*, SimData*, SimData const&) [79]
+                0.00    0.00       1/1           __gnu_cxx::__enable_if<!std::__is_scalar<SimData>::__value, void>::__type std::__fill_a1<SimData*, SimData>(SimData*, SimData*, SimData const&) [80]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__fill_a<SimData*, SimData>(SimData*, SimData*, SimData const&) [79]
+[80]     0.0    0.00    0.00       1         __gnu_cxx::__enable_if<!std::__is_scalar<SimData>::__value, void>::__type std::__fill_a1<SimData*, SimData>(SimData*, SimData*, SimData const&) [80]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Construct<SimData>(SimData*) [68]
+[81]     0.0    0.00    0.00       1         operator new(unsigned long, void*) [81]
+-----------------------------------------------
+
+Index by function name
+
+   [3] printVectorData(std::vector<SimData, std::allocator<SimData> > const&) [21] std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) const [36] SimData* std::__niter_base<SimData*>(SimData*)
+  [43] exportCSV(std::vector<SimData, std::allocator<SimData> > const&) [52] void std::_Destroy_aux<true>::__destroy<SimData*>(SimData*, SimData*) [71] SimData* std::__relocate_a<SimData*, SimData*, std::allocator<SimData> >(SimData*, SimData*, SimData*, std::allocator<SimData>&)
+  [44] plotGraph(std::vector<SimData, std::allocator<SimData> > const&, double, double) [53] std::_Vector_base<SimData, std::allocator<SimData> >::_M_allocate(unsigned long) [26] std::setprecision(int)
+   [4] CruiseControlSystem::runSimulation(double, double) [54] std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::_Vector_impl() [72] std::enable_if<std::__is_bitwise_relocatable<SimData, void>::value, SimData*>::type std::__relocate_a_1<SimData, SimData>(SimData*, SimData*, SimData*, std::allocator<SimData>&)
+  [45] CruiseControlSystem::calculateGains(double, double, double) [55] std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl::~_Vector_impl() [73] std::__size_to_integer(unsigned long)
+  [46] CruiseControlSystem::setModel(CarType, WeatherCondition, RoadType) [42] std::_Vector_base<SimData, std::allocator<SimData> >::_M_deallocate(SimData*, unsigned long) [13] std::__is_constant_evaluated()
+  [47] CruiseControlSystem::CruiseControlSystem() [56] std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_impl_data::_Vector_impl_data() [74] SimData* std::__uninitialized_default_n<SimData*, unsigned long>(SimData*, unsigned long)
+  [37] __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::__normal_iterator(SimData const* const&) [35] std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() [75] SimData* std::__uninitialized_default_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, std::allocator<SimData>&)
+  [17] __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator++() [57] std::_Vector_base<SimData, std::allocator<SimData> >::_Vector_base() [14] double const& std::max<double>(double const&, double const&)
+  [16] bool __gnu_cxx::operator!=<SimData const*, std::vector<SimData, std::allocator<SimData> > >(__gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&, __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > > const&) [58] std::_Vector_base<SimData, std::allocator<SimData> >::~_Vector_base() [76] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [18] EulerSolver::step(double, double, double) const [59] std::__new_allocator<SimData>::deallocate(SimData*, unsigned long) [15] double const& std::min<double>(double const&, double const&)
+  [38] CruiseControlSystem::getMaxAccel() const [60] std::__new_allocator<SimData>::allocate(unsigned long, void const*) [34] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [48] CruiseControlSystem::getMaxDecel() const [61] std::__new_allocator<SimData>::~__new_allocator() [23] std::setw(int)
+  [39] CruiseControlSystem::getMaxSpeed() const [62] SimData* std::__uninitialized_default_n_1<true>::__uninit_default_n<SimData*, unsigned long>(SimData*, unsigned long) [2] double const& std::clamp<double>(double const&, double const&, double const&)
+   [5] CruiseControlSystem::limitAcceleration(double, double) const [33] std::vector<SimData, std::allocator<SimData> >::_S_max_size(std::allocator<SimData> const&) [77] SimData* std::fill_n<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&)
+  [40] CruiseControlSystem::getK(double) const [63] std::vector<SimData, std::allocator<SimData> >::_S_relocate(SimData*, SimData*, SimData*, std::allocator<SimData>&) [78] void std::_Destroy<SimData*>(SimData*, SimData*)
+  [41] CruiseControlSystem::getTau(double) const [64] std::vector<SimData, std::allocator<SimData> >::_M_default_append(unsigned long) [79] void std::__fill_a<SimData*, SimData>(SimData*, SimData*, SimData const&)
+  [12] __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::base() const [65] std::vector<SimData, std::allocator<SimData> >::resize(unsigned long) [80] __gnu_cxx::__enable_if<!std::__is_scalar<SimData>::__value, void>::__type std::__fill_a1<SimData*, SimData>(SimData*, SimData*, SimData const&)
+  [19] __gnu_cxx::__normal_iterator<SimData const*, std::vector<SimData, std::allocator<SimData> > >::operator*() const [66] std::vector<SimData, std::allocator<SimData> >::vector() [27] std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [31] std::_Vector_base<SimData, std::allocator<SimData> >::_M_get_Tp_allocator() const [67] std::vector<SimData, std::allocator<SimData> >::~vector() [22] std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [49] std::vector<SimData, std::allocator<SimData> >::_M_check_len(unsigned long, char const*) const [20] std::vector<SimData, std::allocator<SimData> >::operator[](unsigned long) [28] std::operator~(std::_Ios_Fmtflags)
+  [50] std::vector<SimData, std::allocator<SimData> >::end() const [25] std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [29] std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [24] std::vector<SimData, std::allocator<SimData> >::size() const [68] void std::_Construct<SimData>(SimData*) [30] std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [51] std::vector<SimData, std::allocator<SimData> >::begin() const [69] SimData* std::__fill_n_a<SimData*, unsigned long, SimData>(SimData*, unsigned long, SimData const&, std::random_access_iterator_tag) [81] operator new(unsigned long, void*)
+  [32] std::vector<SimData, std::allocator<SimData> >::max_size() const [70] SimData* std::__addressof<SimData>(SimData&)

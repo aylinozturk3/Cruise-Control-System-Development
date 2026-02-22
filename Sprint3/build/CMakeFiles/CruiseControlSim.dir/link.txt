@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\CruiseControlSim.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\CruiseControlSim.dir/objects.a @CMakeFiles\CruiseControlSim.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\CruiseControlSim.dir/objects.a -Wl,--no-whole-archive -o CruiseControlSim.exe -Wl,--out-implib,libCruiseControlSim.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CruiseControlSim.dir\linkLibs.rsp
